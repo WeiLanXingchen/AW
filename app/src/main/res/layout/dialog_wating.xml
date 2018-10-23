@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@drawable/shape_watting_dialog_bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingBottom="15dp"
+              android:paddingLeft="30dp"
+              android:paddingRight="30dp"
+              android:paddingTop="15dp">
+
+
+    <jyx.com.aw.view.ProgressWheel
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:matProg_barColor="@color/progress_color_start"
+        app:matProg_barWidth="2dp"
+        app:matProg_progressIndeterminate="true"
+        app:matProg_rimColor="@color/progress_color_end"
+        app:matProg_rimWidth="2dp"/>
+
+    <TextView
+        android:id="@+id/tv_waiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="加载中，请稍后..."
+        android:textColor="@color/gray"
+        android:textSize="12sp"/>
+
+
+</LinearLayout>

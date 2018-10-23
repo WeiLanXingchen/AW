@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ActThemeBase" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="ActThemeSwipe" parent="ActThemeBase">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+<style name="aaa">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+
+    <style name="HomeTabBtnStyle_DrawableTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/sel_home_tab_btn_text</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="HomeTabBtnStyle" parent="HomeTabBtnStyle_DrawableTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 统一按钮样式 样式 -->
+    <style name="CommonBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/sel_btn_navigation_color_radius</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#fdfdfd</item>
+    </style>
+
+
+
+    <!-- 统一分割线样式 (水平) -->
+    <style name="CommonDividerLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_line</item>
+    </style>
+
+    <!-- 统一大间隔分割线样式 (水平) -->
+    <style name="CommonDividerBigLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_diver_line</item>
+    </style>
+
+    <!-- 通用文字字体13样式 -->
+    <style name="common_text_style">
+        <item name="android:textColor">@color/common_text_color</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- 通用文字灰色字体13样式 -->
+    <style name="common_text_gay_style">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="BottomAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+    <declare-styleable name="PercentLemon">
+        <attr name="heartColor" format="color" />
+        <attr name="heartClickedColor" format="color" />
+        <attr name="skinStartColor" format="color" />
+        <attr name="skinEndColor" format="color" />
+        <attr name="skinDepth" format="integer" />
+        <attr name="percent" format="float" />
+        <attr name="duration" format="integer" />
+        <attr name="centerTextColor" format="color" />
+    </declare-styleable>
+</resources>

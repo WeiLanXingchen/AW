@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!-- 主Body -->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_tabContainer"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Tab按钮 -->
+    <LinearLayout
+        android:id="@+id/ll_tabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f4f8fa"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_tab1Home"
+            style="@style/HomeTabBtnStyle"
+            android:drawableTop="@drawable/sel_home_tab_btn1"
+            android:text="首页"/>
+
+        <TextView
+            android:id="@+id/tv_tab2Home"
+            style="@style/HomeTabBtnStyle"
+            android:drawableTop="@drawable/sel_home_tab_btn2"
+            android:text="找研友"/>
+
+        <TextView
+            android:id="@+id/tv_tab3Home"
+            style="@style/HomeTabBtnStyle"
+            android:drawableTop="@drawable/sel_home_tab_btn3"
+            android:text="坛子"/>
+        <TextView
+            android:id="@+id/tv_tab4Home"
+            style="@style/HomeTabBtnStyle"
+            android:drawableTop="@drawable/sel_home_tab_btn4"
+            android:text="问答"/>
+        <TextView
+            android:id="@+id/tv_tab5Home"
+            style="@style/HomeTabBtnStyle"
+            android:drawableTop="@drawable/sel_home_tab_btn5"
+            android:text="我的"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignTop="@id/ll_tabContainer"
+        android:background="#999999"/>
+
+</RelativeLayout>

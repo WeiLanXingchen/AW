@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+    <View
+        android:id="@+id/mViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f2f2f2"/>
+    <LinearLayout
+        android:id="@+id/mLinearLayoutHeader"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@id/mCheckBoxShopCart"
+        >
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="14dp"
+            android:background="@color/light_blue"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公共课资料"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/mViewLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line"/>
+<RelativeLayout
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+
+    <CheckBox
+        android:id="@+id/mCheckBoxShopCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:background="@drawable/checkbox_bg"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/mTextViewShopCartDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mCheckBoxShopCart"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/mCheckBoxShopCart"
+        android:layout_toRightOf="@+id/mCheckBoxShopCart"
+        android:textColor="@color/black"
+        android:text="商品描述" />
+
+    <TextView
+        android:id="@+id/mTextViewShopCarNowtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mTextViewShopCartDescription"
+        android:layout_alignStart="@+id/mTextViewShopCartDescription"
+        android:layout_below="@+id/mCheckBoxShopCart"
+        android:textColor="@color/gray_dark"
+        android:text="商品价格"/>
+
+    <TextView
+        android:id="@+id/mTextViewShopCartOriginalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mTextViewShopCarNowtPrice"
+        android:layout_alignBottom="@+id/mTextViewShopCarNowtPrice"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/mTextViewShopCarNowtPrice"
+        android:layout_toRightOf="@+id/mTextViewShopCarNowtPrice"
+        android:textSize="12sp"
+        android:text="原 价" />
+
+    <jyx.com.aw.view.CounterView
+        android:id="@+id/mCounterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mTextViewShopCarNowtPrice"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+
+</LinearLayout>

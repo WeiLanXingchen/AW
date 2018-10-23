@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_emptyTipsImg"
+            android:layout_width="53.5dp"
+            android:layout_height="48dp"
+            android:src="@drawable/data_empty" />
+
+        <TextView
+            android:id="@+id/tv_emptyTipsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="暂无数据"
+            android:textColor="#bdbdbd"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</merge>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_type_name"
+        style="@style/common_text_style"
+        android:text="sssss"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        style="@style/CommonDividerLineStyle"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+    <jyx.com.aw.view.FixedListView
+        android:id="@+id/list_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

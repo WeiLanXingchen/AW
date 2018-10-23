@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/white"
+    >
+
+    <EditText
+        android:paddingLeft="15dp"
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="35dp"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="13sp"
+        android:focusableInTouchMode="true"
+        android:cursorVisible="false"
+        android:background="@drawable/edit"
+        android:id="@+id/mEditTextFooter" />
+
+    <Button
+        android:id="@+id/mButtonFooter"
+        android:layout_alignParentRight="true"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="10dp"
+        android:layout_height="35dp"
+        android:background="@drawable/news_comment"
+        android:textColor="@color/white"
+        android:text="评论"/>
+</LinearLayout>

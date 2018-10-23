@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ll_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/ll_loadingContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <jyx.com.aw.view.ProgressWheel
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:matProg_barColor="@color/progress_color_start"
+            app:matProg_barWidth="2dp"
+            app:matProg_progressIndeterminate="true"
+            app:matProg_rimColor="@color/progress_color_end"
+            app:matProg_rimWidth="2dp"/>
+
+        <TextView
+            android:id="@+id/tv_loading_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="加载中..."
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_loadErrContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/tv_netErrIcon"
+            android:layout_width="74.5dp"
+            android:layout_height="57dp"
+            android:src="@drawable/ic_request_error"/>
+
+        <TextView
+            android:id="@+id/tv_errMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="数据加载失败"
+            android:textColor="@color/home_title_bar_bg"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv_errDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="请检查您的网络，重新加载吧"
+            android:textColor="#999999"
+            android:textSize="11sp"/>
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/sel_reload_err_retry_btn"
+            android:text="重新加载"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

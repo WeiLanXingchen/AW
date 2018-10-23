@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="15dp">
+<ImageView
+    android:id="@+id/mImageViewCommentUserAvatar"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:scaleType="centerCrop"
+    android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:text="用户名"
+            android:textSize="13sp"
+            android:id="@+id/mTextViewCommentUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/mTextViewCommentContent"
+            android:text="评论内容"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

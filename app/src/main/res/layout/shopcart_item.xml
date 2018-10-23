@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <CheckBox
+        android:id="@+id/mCheckBoxShopCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/mTextViewShopCartDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mCheckBoxShopCart"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/mCheckBoxShopCart"
+        android:layout_toRightOf="@+id/mCheckBoxShopCart"
+        android:textColor="@color/black"
+        android:text="商品描述" />
+
+    <TextView
+        android:id="@+id/mTextViewShopCarNowtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mTextViewShopCartDescription"
+        android:layout_alignStart="@+id/mTextViewShopCartDescription"
+        android:layout_below="@+id/mCheckBoxShopCart"
+        android:textColor="@color/gray_dark"
+        android:text="商品价格"/>
+
+    <TextView
+        android:id="@+id/mTextViewShopCartOriginalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mTextViewShopCarNowtPrice"
+        android:layout_alignBottom="@+id/mTextViewShopCarNowtPrice"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/mTextViewShopCarNowtPrice"
+        android:layout_toRightOf="@+id/mTextViewShopCarNowtPrice"
+        android:textSize="12sp"
+        android:text="原 价" />
+
+    <TextView
+        android:id="@+id/mTextViewShopCartDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mTextViewShopCartNum"
+        android:layout_alignBottom="@+id/mTextViewShopCartNum"
+        android:layout_toLeftOf="@+id/mTextViewShopCartNum"
+        android:layout_toStartOf="@+id/mTextViewShopCartNum"
+        android:background="@drawable/left_cart"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="—"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mTextViewShopCartAsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mTextViewShopCartNum"
+        android:layout_alignBottom="@+id/mTextViewShopCartNum"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/right_cart"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="+"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mTextViewShopCartNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mTextViewShopCartOriginalPrice"
+        android:layout_alignBottom="@+id/mTextViewShopCartOriginalPrice"
+        android:layout_toLeftOf="@+id/mTextViewShopCartAsc"
+        android:layout_toStartOf="@+id/mTextViewShopCartAsc"
+        android:background="@drawable/middle_cart"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="1"
+        android:textSize="16sp" />
+</RelativeLayout>

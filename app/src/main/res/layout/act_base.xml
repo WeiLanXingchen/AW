@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 为沉浸式预留的通知栏View -->
+    <View
+        android:id="@+id/view_statusBarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/custom_status_bar_mask_color" />
+
+    <jyx.com.aw.view.NavigationBar
+        android:id="@+id/nb_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:id="@+id/fl_bodyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nb_bar"
+        android:background="@color/white" />
+
+    <jyx.com.aw.view.ReloadView
+        android:id="@+id/load_view"
+        android:layout_below="@id/nb_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

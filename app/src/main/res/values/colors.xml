@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 统一分割线颜色 -->
+    <color name="gray_line">#D1D1D1</color>
+    <color name="gray_diver_line">#f4f8fa</color>
+    <!-- 统一分割线颜色 -->
+    <color name="home_gray_line">#E5E5E5</color>
+    <!-- 统一界面背景色 -->
+    <!--<color name="background">#f0f0f0</color>-->
+    <color name="background">@color/white</color>
+    <!-- 首页title背景颜色 -->
+    <color name="home_title_bar_bg">#1ec2da</color>
+    <!-- 统一标题栏操作按钮颜色 -->
+    <color name="common_title_bar_text_btn">@color/home_title_bar_bg</color>
+    <!-- 默认title bar（用户）背景颜色 -->
+    <color name="bg_navigation_bar">@color/home_title_bar_bg</color>
+
+    <!-- 统一字体颜色颜色 -->
+    <color name="common_text_color">#5e5e5e</color>
+
+    <!-- 通用按钮背景颜色 (正常) -->
+    <color name="common_btn_bg_color">#ffae00</color>
+    <!-- 通用按钮背景颜色 (按下) -->
+    <color name="common_btn_bg_color_pre">#90ffae00</color>
+    <!-- 通用按钮不可使用状态背景颜色 -->
+    <color name="btn_un_enabled_bg_color">#dbdbdb</color>
+
+
+    <!-- 首页底部Tab按钮颜色 -->
+    <color name="home_tab_btn_text_color_nor">#9fa0a0</color>
+    <color name="home_tab_btn_text_color_sel">#5aa5ff</color>
+    <!--加载progress颜色-->
+    <color name="progress_color_start">@color/home_title_bar_bg</color>
+    <color name="progress_color_end">@color/purple</color>
+
+
+    <!--滑动viewpager, title 按下的颜色-->
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!-- 统一ListView Item 按钮颜色 -->
+    <color name="common_listview_item_pre_bg_color">#DCDCDC</color>
+
+
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 深黑色 -->
+    <color name="black_deep">#434343</color>
+    <!-- 黑色透明 -->
+    <color name="black_trans">#7b000000</color>
+    <!-- 深黑色透明 -->
+    <color name="black_deep_tran">#99000000</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 深灰色 -->
+    <color name="gray_dark">#555555</color>
+
+    <color name="translucent_white">#80FFFFFF</color>
+
+    <!-- 自定义通知栏遮罩 -->
+    <color name="custom_status_bar_mask_color">#000000</color>
+    <!-- 灰色 -->
+    <color name="gray">#858585</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!--<color name="gray_white">#f8fafd</color>-->
+    <color name="gray_white">#bdbdbe</color>
+    <!-- 橙色 -->
+    <color name="orange">#FC5830</color>
+    <!-- 紫色 -->
+    <color name="purple">#823BB4</color>
+    <!-- 深紫色 -->
+    <color name="deep_purple">#420B9F</color>
+    <!-- 红色 -->
+    <color name="red">#fffd1111</color>
+
+    <color name="blue">#42A4B6</color>
+    <!--浅蓝色-->
+    <color name="light_blue">#3590ff</color>
+    <!--经验字体颜色-->
+    <color name="experience_text_color">#adadad</color>
+    <!--首页边框颜色-->
+    <color name="home_recyclerview_item_border_color">#3d3c3c</color>
+    <!--浅灰色-->
+    <color name="light_gray">#f7f7f7</color>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--导航栏 -->
+    <declare-styleable name="NavigationBar">
+        <attr name="textLeft" format="string"/>
+        <attr name="textRight" format="string"/>
+        <attr name="textTitle" format="string"/>
+        <attr name="textColor" format="color"/>
+        <attr name="imageLeft" format="reference"/>
+        <attr name="imageRight" format="reference"/>
+        <attr name="imageCenter" format="reference"/>
+        <attr name="android:background"/>
+    </declare-styleable>
+
+    <!--圆形进度条 -->
+    <declare-styleable name="CircleProgress">
+        <attr name="circle_progress" format="integer"/>
+        <attr name="circle_max" format="integer"/>
+
+        <attr name="circle_unfinished_color" format="color"/>
+        <attr name="circle_finished_color" format="color"/>
+
+        <attr name="circle_text_size" format="dimension"/>
+        <attr name="circle_text_color" format="color"/>
+
+        <attr name="circle_prefix_text" format="string"/>
+        <attr name="circle_suffix_text" format="string"/>
+    </declare-styleable>
+
+    <!--图片裁剪-->
+    <attr name="cropImageStyle" format="reference"/>
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color"/>
+        <attr name="showThirds" format="boolean"/>
+        <attr name="showHandles">
+            <enum name="changing" value="0"/>
+            <enum name="always" value="1"/>
+            <enum name="never" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WaveView">
+        <attr name="above_wave_color" format="color"/>
+        <attr name="blow_wave_color" format="color"/>
+        <attr name="circle_bg_color" format="color"/>
+        <attr name="bg_border_size" format="dimension"/>
+        <attr name="bg_border_color" format="color"/>
+        <attr name="progress" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="waveViewStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="DrawableTextView">
+        <attr name="drawableLeftHeight" format="dimension"/>
+        <attr name="drawableLeftWidth" format="dimension"/>
+        <attr name="drawableRightHeight" format="dimension"/>
+        <attr name="drawableRightWidth" format="dimension"/>
+        <attr name="drawableTopHeight" format="dimension"/>
+        <attr name="drawableTopWidth" format="dimension"/>
+        <attr name="drawableBottomHeight" format="dimension"/>
+        <attr name="drawableBottomWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlideSwitch">
+        <attr name="checkedThemeColor" format="color"/>
+        <!-- 选中背景色 -->
+        <attr name="uncheckedThemeColor" format="color"/>
+        <!-- 未选中背景色 -->
+        <attr name="isChecked" format="boolean"/>
+        <attr name="shape">
+            <enum name="rect" value="1"/>
+            <enum name="circle" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean"/>
+        <attr name="matProg_barColor" format="color"/>
+        <attr name="matProg_rimColor" format="color"/>
+        <attr name="matProg_rimWidth" format="dimension"/>
+        <attr name="matProg_spinSpeed" format="float"/>
+        <attr name="matProg_barSpinCycleTime" format="integer"/>
+        <attr name="matProg_circleRadius" format="dimension"/>
+        <attr name="matProg_fillRadius" format="boolean"/>
+        <attr name="matProg_barWidth" format="dimension"/>
+        <attr name="matProg_linearProgress" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 滑动Activity -->
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="all" value="3"/>
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <!-- 支持分割线的GridView -->
+    <declare-styleable name="DividerGridView">
+        <attr name="dividerAllSize" format="dimension"/>
+        <attr name="dividerAllColor" format="color"/>
+        <attr name="dividerVerticalSize" format="dimension"/>
+        <attr name="dividerVerticalColor" format="color"/>
+        <attr name="dividerHorizontalSize" format="dimension"/>
+        <attr name="dividerHorizontalColor" format="color"/>
+    </declare-styleable>
+
+    <!-- 滑动viewPager title变化 -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
+        <!--增加4个属性-->
+        <attr name="zmsTabTextSize" format="dimension"/>
+        <attr name="zmsTabTextColor" format="color"/>
+        <attr name="zmsSelectedTabTextSize" format="dimension"/>
+        <attr name="zmsSelectedTabTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="my_counter_size">
+        <attr name="count_max" format="integer" />
+    </declare-styleable>
+</resources>
